@@ -13,20 +13,19 @@ function Hero() {
   )
 }
 
-function Technologies() {
+function Technologies({ skills }) {
   return (
     <div className='technologies-container'>
+      <h2>Technologies</h2>
       <ul className='technologies'>
-        <li className='technology-card'>HTML</li>
-        <li className='technology-card'>CSS</li>
-        <li className='technology-card'>JavaScript</li>
-        <li className='technology-card'>React</li>
-        <li className='technology-card'>Node</li>
-        <li className='technology-card'>Express</li>
+        {skills.map((skill, index) => (
+          <li key={index} className='technology-card'>{skill}</li>
+        ))}
       </ul>
     </div>
   )
 }
+
 
 function FeaturedProjects() {
   return (
@@ -59,11 +58,15 @@ function Location() {
   )
 }
 
-export default function Home() {
+export default function Home(props) {
+
+  const { skills } = props;
+
+
   return (
     <div>
       <Hero />
-      <Technologies />
+      <Technologies skills={skills} />
       <FeaturedProjects />
       {/* <Location /> */}
     </div>

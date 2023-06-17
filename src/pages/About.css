@@ -1,3 +1,7 @@
+.about-container {
+  height: 90vh;
+}
+
 .introduction-container {
   display: flex;
   justify-content: center;
@@ -26,6 +30,19 @@
   margin: 2rem 0;
   width: 100%;
   height: 100px;
+}
+
+.work-experience-container {
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+.education-container {
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 .skills-container {

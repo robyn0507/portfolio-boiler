@@ -13,14 +13,25 @@ import NoPage from "./pages/NoPage";
 
 import './index.css';
 
+const skills = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Node',
+    'Express',
+    'SQL',
+    'DevOps'
+];
+
 function App() {
     return (
         <div>
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Layout />}>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/about" element={<About />} />
+                        <Route path="/" element={<Home skills={skills} />} />
+                        <Route path="/about" element={<About skills={skills} />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/contact" element={<Contact />} />
                         <Route path="*" element={<NoPage />} />
