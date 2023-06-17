@@ -1,6 +1,8 @@
 import React from 'react'
 
-function Hero () { 
+import './Home.css'
+
+function Hero() {
   return (
     <div className='hero-container'>
       <div className="hero-text">
@@ -11,20 +13,22 @@ function Hero () {
   )
 }
 
-function Technologies () {
+function Technologies() {
   return (
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>React</li>
-      <li>Node</li>
-      <li>Express</li>
-    </ul>
+    <div className='technologies-container'>
+      <ul className='technologies'>
+        <li className='technology-card'>HTML</li>
+        <li className='technology-card'>CSS</li>
+        <li className='technology-card'>JavaScript</li>
+        <li className='technology-card'>React</li>
+        <li className='technology-card'>Node</li>
+        <li className='technology-card'>Express</li>
+      </ul>
+    </div>
   )
 }
 
-function FeaturedProjects () {
+function FeaturedProjects() {
   return (
     <div className='featured-projects-container'>
       <h2>Featured Projects</h2>
@@ -46,7 +50,7 @@ function FeaturedProjects () {
   )
 }
 
-function Location () {
+function Location() {
   return (
     <div className='location-container'>
       <h2>Location</h2>
@@ -61,7 +65,7 @@ export default function Home() {
       <Hero />
       <Technologies />
       <FeaturedProjects />
-      <Location />
+      {/* <Location /> */}
     </div>
   )
 }
