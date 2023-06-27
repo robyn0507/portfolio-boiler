@@ -14,19 +14,50 @@ import NoPage from "./pages/NoPage";
 import './index.css';
 
 const skills = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Node',
-    'Express',
-    'SQL',
-    'DevOps'
+    {
+        name: 'HTML',
+        years: 5,
+        icon: 'fab fa-html5',
+        color: '#e34c26'
+    },
+    {
+        name: 'CSS',
+        years: 5,
+        icon: 'fab fa-css3-alt',
+        color: '#264de4'
+    },
+    {
+        name: 'JavaScript',
+        years: 5,
+        icon: 'fab fa-js-square',
+
+        color: '#f0db4f'
+    },
+    {
+        name: 'React',
+        years: 3,
+        icon: 'fab fa-react',
+        color: '#61dbfb'
+    },
+    {
+        name: 'Node.js',
+        years: 3,
+        icon: 'fab fa-node-js',
+        color: '#3c873a'
+    },
+    {
+        name: 'MySQL',
+        years: 3,
+        icon: 'fas fa-database',
+        color: '#00758f'
+    }
+
+
 ];
 
 function App() {
     return (
-        <div>
+        <div className="App">
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Layout />}>

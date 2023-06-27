@@ -7,7 +7,7 @@ function Hero() {
     <div className='hero-container'>
       <div className="hero-text">
         <h1>Hi, I'm <span className='highlight'>John</span></h1>
-        <h2>Full Stack Web Developer</h2>
+        <p>Full Stack Web Developer</p>
       </div>
     </div>
   )
@@ -19,7 +19,15 @@ function Technologies({ skills }) {
       <h2>Technologies</h2>
       <ul className='technologies'>
         {skills.map((skill, index) => (
-          <li key={index} className='technology-card'>{skill}</li>
+          <li key={index} className='technology-card'>
+            <div className='technology-icon-container'>
+              <i className={skill.icon} style={{ color: skill.color }}></i>
+            </div>
+            <div className='technology-text'>
+              <h3>{skill.name}</h3>
+              <p>{skill.years} years</p>
+            </div>
+          </li>
         ))}
       </ul>
     </div>
@@ -64,7 +72,7 @@ export default function Home(props) {
 
 
   return (
-    <div>
+    <div className='home-container'>
       <Hero />
       <Technologies skills={skills} />
       <FeaturedProjects />
