@@ -1,15 +1,16 @@
 import React from 'react'
 
 import './About.css'
-
+import './assets'
 function Introduction() {
   return (
-    <div className='introduction-container'>
+    <div className='introduction-container' style={{ backgroundImage: "url('.assets/Colorful Hologram Dekstop Wallpaper.png')" }}>
       <h2>Introduction</h2>
-      <p>Hi, my name is Kevin. I am a software engineer based in San Diego, CA.</p>
+      <p>Hi, my name is Robyn. I'm a software engineer based in Las Vegas, NV.</p>
     </div>
-  )
+  );
 }
+
 
 function Education() {
   return (
@@ -17,9 +18,9 @@ function Education() {
       <h2>Education</h2>
       <div className='education'>
         <div className='education-card'>
-          <h3>University of California, San Diego</h3>
-          <p>Bachelor of Arts, Economics</p>
-          <p>September 2015 - June 2019</p>
+          <h3>W3schools.com, Remote</h3>
+          <p>Web development bootcamp</p>
+          <p>March 2023 - Current</p>
         </div>
       </div>
     </div>
@@ -30,23 +31,30 @@ function FunFact() {
   return (
     <div className='fun-fact-container'>
       <h2>Fun Fact</h2>
-      <p>I love to play basketball and video games!</p>
+      <p>I'm an animal lover.</p>
     </div>
   )
 }
 
-function Skills({ skills }) {
+function Skills({ newSkills }) {
   return (
     <div className='skills-container'>
       <h2>Skills</h2>
-      <ul className='skills'>
-        {skills.map((skill, index) => (
-          <li key={index} className='skill-card'>{skill}</li>
+      <div className='skills'>
+        {newSkills.map((skill, index) => (
+          <div className='skill-card' key={index}>
+            <div className='skill-icon' style={{ backgroundColor: skill.color }}>
+              <i className={skill.icon}></i>
+            </div>
+            <h3>{skill.name}</h3>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   )
 }
+
+
 
 function WorkExperience() {
   return (
@@ -54,9 +62,9 @@ function WorkExperience() {
       <h2>Work Experience</h2>
       <div className='work-experience'>
         <div className='work-experience-card'>
-          <h3>University of California, San Diego</h3>
-          <p>Student Assistant</p>
-          <p>September 2015 - June 2019</p>
+          <h3>Klaviyo</h3>
+          <p>Product Expert</p>
+          <p>June 2022 - Current</p>
         </div>
       </div>
     </div>
@@ -67,7 +75,7 @@ function Hobbies() {
   return (
     <div className='hobbies-container'>
       <h2>Hobbies:</h2>
-      <p>I love to play basketball and video games!</p>
+      <p>I love to garden and do arts and crafts</p>
     </div>
   )
 }
@@ -82,7 +90,7 @@ export default function About({ skills }) {
         <WorkExperience />
         <Education />
       </div>
-      <Skills skills={skills} />
+      <Skills newSkills={skills} />
       <Hobbies />
       <FunFact />
     </div>
