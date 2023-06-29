@@ -1,10 +1,10 @@
 import React from 'react'
 
 import './About.css'
-import './assets'
+
 function Introduction() {
   return (
-    <div className='introduction-container' style={{ backgroundImage: "url('.assets/Colorful Hologram Dekstop Wallpaper.png')" }}>
+    <div className='introduction-container'>
       <h2>Introduction</h2>
       <p>Hi, my name is Robyn. I'm a software engineer based in Las Vegas, NV.</p>
     </div>
@@ -31,7 +31,7 @@ function FunFact() {
   return (
     <div className='fun-fact-container'>
       <h2>Fun Fact</h2>
-      <p>I'm an animal lover.</p>
+      <p>I'm an animal lover and vegan.</p>
     </div>
   )
 }
@@ -75,7 +75,7 @@ function Hobbies() {
   return (
     <div className='hobbies-container'>
       <h2>Hobbies:</h2>
-      <p>I love to garden and do arts and crafts</p>
+      <p> I love to garden and do arts and crafts</p>
     </div>
   )
 }

@@ -61,7 +61,7 @@ function Location() {
   return (
     <div className='location-container'>
       <h2>Location</h2>
-      <p>San Diego, CA</p>
+      <p>Las Vegas, NV</p>
     </div>
   )
 }

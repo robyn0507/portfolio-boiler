@@ -17,18 +17,24 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  
 }
 
 .hero-text {
+  text-align: right;
   font-size: 2rem;
   font-weight: 500;
-  color: #333;
+  color: white;
+}
+.hero-text h1 {
+  margin: 0;
 }
 
 .hero-text p {
+  text-align: right;
   font-size: 1.5rem;
   font-weight: 400;
-  color: #333;
+  color: gray;
 }
 
 .hero-text span {
@@ -51,13 +57,14 @@
 }
 
 .technology-card {
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 1.5rem;
   margin: 1rem;
-  border-radius: 5px;
+  border-radius: 15px;
   width: 200px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
@@ -86,23 +93,25 @@
   flex-wrap: wrap;
   margin: 2rem 0;
   width: 100%;
+  border-radius: 15px;
 }
 
 .project {
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 1.5rem;
   margin: 1rem;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease-in-out;
 }
 /* MEDIA QUERY - mobile <320px */
 @media screen and (max-width: 320px) {
   .home-container {
-    background-color: red;
+    background-color:plum;
     width: 100%;
   }
 
@@ -119,10 +128,11 @@
 /* MEDIA QUERY - mobile >320px */
 @media screen and (min-width: 320px) {
   .home-container {
-    background-color: yellow;
+    background-color: gainsboro;
   }
 
   .hero-container {
+    background-image: url('/Users/robynjohnson/Documents/GitHub/portfolio-boiler/src/pages/assets/Colorful Hologram Dekstop Wallpaper.png');
   }
 
   .technologies-container {
@@ -135,7 +145,7 @@
 /* MEDIA QUERY - tablet >768px */
 @media screen and (min-width: 768px) {
   .home-container {
-    background-color: green;
+    background-color: plum;
   }
 
   .hero-container {
@@ -151,7 +161,7 @@
 /* MEDIA QUERY - desktop >1200px */
 @media screen and (min-width: 1200px) {
   .home-container {
-    background-color: blue;
+    background-color: gainsboro;
   }
 
   .hero-container {
