@@ -73,7 +73,6 @@
 .technology-card:hover {
   transform: scale(1.2);
 }
-
 .technology-icon-container i {
   font-size: 3rem;
   color: rebeccapurple;
@@ -132,7 +131,7 @@
   }
 
   .hero-container {
-    background-image: url('/Users/robynjohnson/Documents/GitHub/portfolio-boiler/src/pages/assets/Colorful Hologram Dekstop Wallpaper.png');
+    background-image: url('/Users/robynjohnson/Documents/GitHub/portfolio-boiler/src/pages/assets/contactbackground.png');
   }
 
   .technologies-container {
