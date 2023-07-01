@@ -17,7 +17,7 @@
 
 
 .Contact-container {
-    background-image: url('/Users/robynjohnson/Documents/GitHub/portfolio-boiler/src/pages/assets/contactbackground.png');
+    background-image: url('./assets/contactbackground.png');
     background-size: contain;
     background-repeat: no-repeat;
 
